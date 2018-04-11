@@ -1,0 +1,16 @@
+﻿<template>
+    <div>
+        <h1>Memory game</h1>
+        <h2>Match the two identical pictures with each other</h2>
+        <p>Current count: <strong>{{ currentcount }}</strong></p>
+        <button @click="incrementCounter">Increment</button>
+        <p>Number of pictures: {{ numberOfPictures }}</p>
+        <button @click="showPictures">Show pictures</button>
+        <div class="row" v-html="memoryCards">
+        </div>
+    </div>
+</template>
+
+
+<style src="./memorygame.css" />
+<script src="./memorygame.ts"></script>
